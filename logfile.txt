@@ -1,0 +1,46 @@
+[Core] Info:    Initializing OpenAL...
+[Core] Info:        OpenAL Drivers not found. Using 32 Bit software fallback.
+[Core] ERROR:       An error occured while initializing OpenAL: TypeInitializationException at IList<String> AudioContext.get_AvailableDevices(): The type initializer for 'OpenTK.Audio.AudioContext' threw an exception.
+[Core]              CallStack:
+[Core]                 at OpenTK.Audio.AudioContext.get_AvailableDevices()
+[Core]                 at Duality.SoundDevice..ctor()
+[Core] Info:    Scanning for core plugins...
+[Core] Info:        Plugins\Breakout.core.dll...
+[Core] Info:            Assembly loaded: Breakout.core
+[Core] Info:        Plugins\Compatibility.core.dll...
+[Core] Info:            Assembly loaded: Compatibility.core
+[Core] Info:        Plugins\GamePlugin.core.dll...
+[Core] Info:            Assembly loaded: GamePlugin.core
+[Core] Info:    Assembly loaded: System.Xml
+[Core] Info:    Assembly loaded: System.Xml.Linq
+[Core] Info:    DualityApp initialized
+[Core]          Debug Mode: True
+[Core]          Command line arguments: editor, debug
+[Core]          Is64BitProcess: False
+[Core] Info:    Initializing core plugins...
+[Core] Info:        Breakout.core...
+[Core] Info:        Compatibility.core...
+[Core] Info:        GamePlugin.core...
+[Core] Info:    OpenGL initialized
+[Edit] Info:        Vendor: Intel
+[Edit] Info:        Version: 4.6.0 - Build 26.20.100.7262
+[Edit] Info:        Renderer: Intel(R) UHD Graphics 630
+[Edit] Info:        Shading language version: 4.60 - Build 26.20.100.7262
+[Core] Info:    Initializing default content..
+[Core] Info:        Assembly loaded: ManagedSquish
+[Core] Info:    ..done
+[Core] Info:    Loading Ressource 'Data\Scene.Scene.res'...
+[Core] ERROR:   TypeLoadException at Void Application.OnUpdate(): Could not load type 'Breakout.Ball' from assembly 'Breakout.core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+[Core]          CallStack:
+[Core]             at Breakout.Application.OnUpdate()
+[Core]             at Duality.GameObject.<Update>b__16(ICmpUpdatable l)
+[Core]             at Duality.GameObject.IterateComponents[T](Action`1 forEach, Predicate`1 where)
+[Core]             at Duality.GameObject.Update()
+[Core]             at Duality.Resources.Scene.Update()
+[Core]             at Duality.DualityApp.Update()
+[Core]             at Duality.Launcher.DualityLauncher.OnUpdateFrame(FrameEventArgs e)
+[Core]             at OpenTK.GameWindow.RaiseUpdateFrame(Double elapsed, Double& timestamp)
+[Core]             at OpenTK.GameWindow.DispatchUpdateAndRenderFrame(Object sender, EventArgs e)
+[Core]             at OpenTK.GameWindow.Run(Double updates_per_second, Double frames_per_second)
+[Core]             at Duality.Launcher.DualityLauncher.Main(String[] args)
+[Core] ERROR:   DualityApp terminated unexpectedly
